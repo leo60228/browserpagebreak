@@ -4,6 +4,6 @@ Modernizr.load({
 });
 
 Modernizr.load({
-	test: Modernizr.mq('print'),
+	test: Modernizr.mq('only all'),
 	yep: 'media.css'
 });
