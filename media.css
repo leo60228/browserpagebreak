@@ -1,0 +1,6 @@
+@media print {
+	.longpause {
+		height: auto;
+		page-break-after: always;
+	}
+}
