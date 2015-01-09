@@ -1,3 +1,4 @@
+//Array Filter Polyfill
 if (!Array.prototype.filter) {
 	Array.prototype.filter = function(fun /*, thisp*/ ) {
 		var len = this.length;
