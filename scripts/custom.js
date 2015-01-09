@@ -47,7 +47,8 @@
 		}
 	})();
 	require(['modernizr'], function() {
-		if (!Modernizr.cssvhunit) {
+		//if (!Modernizr.cssvhunit) {
+		if (true) {
 			require(['tokenizer', 'parser', 'vminpoly']);
 		}
 		if (Modernizr.mq('only all')) {
