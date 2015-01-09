@@ -54,7 +54,7 @@
 				"shim": {
 					"vminpoly": {
 						deps: ['tokenizer']
-					}
+					},
 					
 					"tokenizer": {
 						exports: 'tokenize'
