@@ -53,7 +53,7 @@
 			requirejs.config({
 				"shim": {
 					"vminpoly": {
-						deps: ['tokenizer'];
+						deps: ['tokenizer']
 					}
 					
 					"tokenizer": {
