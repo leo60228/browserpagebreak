@@ -1,3 +1,7 @@
+var namespace = require('tokenizer');
+
+for (var attrname in namespace) { window[attrname] = namespace[attrname]; }
+
 (function (root, factory) {
     // Universal Module Definition (UMD) to support AMD, CommonJS/Node.js,
     // Rhino, and plain browser loading.
