@@ -50,6 +50,12 @@
 	require(['modernizr'], function() {
 		//if (!Modernizr.cssvhunit) {
 		if (true) {
+			requirejs.config({
+				"shim": {
+					"vminpoly": ["tokenizer"],
+					"vminpoly": ["parser"]
+    				}
+			});
 			require(['tokenizer'], function() {
 				require(['parser'], function() {
 					require(['vminpoly']);
