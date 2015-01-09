@@ -50,7 +50,11 @@
 	require(['modernizr'], function() {
 		//if (!Modernizr.cssvhunit) {
 		if (true) {
-			require(['tokenizer', 'parser', 'vminpoly']);
+			require(['tokenizer'], function() {
+				require(['parser'], function() {
+					require(['vminpoly']);
+				});
+			});
 		}
 		if (Modernizr.mq('only all')) {
 			loadCss('media.css');
