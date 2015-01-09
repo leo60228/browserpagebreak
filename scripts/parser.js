@@ -1,5 +1,5 @@
 (function (root, factory) {
-	var EOFToken = '\n';
+    function EOFToken() { return this; }
 	
     // Universal Module Definition (UMD) to support AMD, CommonJS/Node.js,
     // Rhino, and plain browser loading.
