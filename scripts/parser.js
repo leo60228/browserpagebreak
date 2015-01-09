@@ -1,6 +1,4 @@
 (function (root, factory) {
-    EOFToken = function() { return this; }
-	
     // Universal Module Definition (UMD) to support AMD, CommonJS/Node.js,
     // Rhino, and plain browser loading.
     if (typeof define === 'function' && define.amd) {
@@ -13,6 +11,7 @@
 }(this, function (exports) {
 
 function parse(tokens) {
+	var EOFToken = function() { return this; }
 	var mode = 'top-level';
 	var i = -1;
 	var token;
