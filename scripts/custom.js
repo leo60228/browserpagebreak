@@ -1,4 +1,5 @@
 (function() {
+	//CSS Loader
 	function loadCss(url) {
 		var link = document.createElement("link");
 		link.type = "text/css";
