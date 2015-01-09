@@ -52,8 +52,13 @@
 		if (true) {
 			requirejs.config({
 				"shim": {
-					"vminpoly": ["tokenizer"],
-					"vminpoly": ["parser"]
+					"vminpoly": {
+						deps: ['tokenizer'];
+					}
+					
+					"tokenizer": {
+						exports: 'tokenize'
+					}
     				}
 			});
 			require(['tokenizer'], function() {
