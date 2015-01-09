@@ -11,7 +11,7 @@
 }(this, function (exports) {
 
 function parse(tokens) {
-	var EOFToken = function() { return this; }
+	//var EOFToken = function() { return this; }
 	var mode = 'top-level';
 	var i = -1;
 	var token;
