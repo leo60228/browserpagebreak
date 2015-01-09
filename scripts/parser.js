@@ -26,7 +26,7 @@ function parse(tokens) {
 		if(i < tokens.length)
 			token = tokens[i];
 		else
-			token = new EOFToken;
+			token = new Object();
 		return true;
 	};
 	var reprocess = function() {
