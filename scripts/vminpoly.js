@@ -2,7 +2,7 @@
 (function() {
   var tokenize = require('tokenizer').tokenize;
   
-  var tokenize = require('parser').parse;
+  var parse = require('parser').parse;
   
   var XMLHttpFactories, ajax, createXMLHTTPObject, getViewportSize, initLayoutEngine;
 
