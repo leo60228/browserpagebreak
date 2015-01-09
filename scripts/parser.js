@@ -30,7 +30,7 @@ function parse(tokens) {
 		if(i < tokens.length)
 			token = tokens[i];
 		else
-			token = new Object();
+			token = new EOFToken();
 		return true;
 	};
 	var reprocess = function() {
