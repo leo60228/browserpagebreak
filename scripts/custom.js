@@ -49,8 +49,8 @@
 	})();
 	require(['modernizr'], function() {
 		if (!Modernizr.cssvhunit) {
-			require(['vh']
-		}
+			require(['vh'];
+		};
 		if (Modernizr.mq('only all')) {
 			loadCss('media.css');
 		};
