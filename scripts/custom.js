@@ -48,24 +48,8 @@
 		}
 	})();
 	require(['modernizr'], function() {
-		//if (!Modernizr.cssvhunit) {
-		if (true) {
-			requirejs.config({
-				"shim": {
-					"vminpoly": {
-						deps: ['tokenizer']
-					},
-					
-					"tokenizer": {
-						exports: 'tokenize'
-					}
-    				}
-			});
-			require(['tokenizer'], function() {
-				require(['parser'], function() {
-					require(['vminpoly']);
-				});
-			});
+		if (!Modernizr.cssvhunit) {
+			require(['vh']
 		}
 		if (Modernizr.mq('only all')) {
 			loadCss('media.css');
