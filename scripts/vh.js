@@ -70,7 +70,7 @@
 			vhCurrent = clean.match(vhPattern),
 			sheetPathPattern = /(.*\/)/,
 			sheetPath = sheetPathPattern.exec(link)[0], //relative path to css file specified in @import
-			importPattern = /@import (?:url\()?['"]?([^'\)"]*)['"]?\)?[^;]*/gm, //matches all @import variations outlined at: https://developer.mozilla.org/en-US/docs/Web/CSS/@import
+			importPattern = new RegExp('@import ?:url\()?[\'"]?([^\'\)"]*)[\'"]?\)?[^;]*'), //matches all @import variations outlined at: https://developer.mozilla.org/en-US/docs/Web/CSS/@import
 			importStatement = null;
 		while ((importStatement = importPattern.exec(sheetCSS)) !== null) {
 			importLinks.push(sheetPath + importStatement[1]);
